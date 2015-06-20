@@ -1,4 +1,4 @@
-src="http://maps.googleapis.com/maps/api/js">
+<script src="http://maps.googleapis.com/maps/api/js"></script>
 var country,state,city,pinCode,latitude,longitude;
 function func(){return;}
 function createCORSRequest(method, url) {
@@ -91,7 +91,7 @@ xmlhttp.onreadystatechange=function()
 infowindow.open(map,marker);
 	}
 }
-xmlhttp.open("GET",url,true);
+xmlhttp.open("POST",url,true);
 xmlhttp.send();
               document.getElementById("current").innerHTML=country+
                " | "+state+" | "+city+"  | "+pinCode;
