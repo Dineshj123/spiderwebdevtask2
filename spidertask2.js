@@ -1,4 +1,4 @@
-<script src="http://maps.googleapis.com/maps/api/js"></script>
+src="http://maps.googleapis.com/maps/api/js";
 var country,state,city,pinCode,latitude,longitude;
 function func(){return;}
 function createCORSRequest(method, url) {
