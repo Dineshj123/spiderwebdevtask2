@@ -15,7 +15,7 @@ The Database contains the following fields:
 </ul>
 </p>
 <p id="id1">
-I have attached the <b>DB DETAILS</b>named<strong>registrationspider.sql</strong> with my code.<br>
+I have attached the <b>DB DETAILS</b> named <strong> registrationspider.sql </strong> with my code.<br>
 
 </p>
 </body>
