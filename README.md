@@ -1,7 +1,3 @@
-<html>
-<head>
-</head>
-<body>
 # spiderwebdevtask2
 ##Hello!<br>
 #####I'm Dinesh.My ROLL NO:110114024.<br>
@@ -25,5 +21,4 @@ And I have used many script sources which are as follows:<br>
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://api.openweathermap.org/data/2.5/weather?lat=lat&lng=lng; -To determine the weather at the given latitude and longitude.
 </p>
 <div id="footer" style="text-align:center"> #######Thank You!</div>
-</body>
-</html>
+
