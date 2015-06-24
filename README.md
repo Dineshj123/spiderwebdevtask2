@@ -24,6 +24,6 @@ And I have used many script sources which are as follows:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://maps.googleapis.com/maps/api/geocode/json?latlng=lat,lng&sensor=true;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://api.openweathermap.org/data/2.5/weather?lat=lat&lng=lng; -To determine the weather at the given latitude and longitude.
 </p>
-<div id="footer" style="background-color:red"> Thank You!</div>
+<div id="footer" style="text-align:center"> #######Thank You!</div>
 </body>
 </html>
