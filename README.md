@@ -20,6 +20,12 @@ And I have used many script sources and URL's which are as follows:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://maps.googleapis.com/maps/api/geocode/json?latlng=lat,lng&sensor=true;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://api.openweathermap.org/data/2.5/weather?lat=lat&lng=lng; -To determine the weather at the given latitude and longitude.
 </p>
+<strong><b>BUILD INSTRUCTIONS:</strong></b>
+<p>
+And what I have done using these is,<br>
+Initially I have loaded the google map using the api script source,and then I have made a marker which is draggable <br>
+To get the latitude and Longitude I have used the dragstart and dragend,which enables me to get those<br> and applying these latitude and longitude to the geocode URL to get the city's name and the prevailing weather<br> corresponding to the latitude and longitude.And then I have loaded these variables in my databse using php.<br>By retrieving the data I have again loaded a map in which I have attached markers with the places that visited cuurently within an hour.  
+</p>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
