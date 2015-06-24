@@ -1,4 +1,10 @@
 <?php
+echo "<script type=\"text/javascript\">
+var markers=[];
+var i=0,lat,lng,pos;
+ </script>";
+  $lat;
+ $lng;
 $host="localhost";
 $user="root";
 $password="";
@@ -23,7 +29,15 @@ if($dbcon){
 		echo "</td><td>";
 		echo $row['description'];
 		echo "</tr></td><br>";
-	}
+		echo "<script type=\"text/javascript\">
+		lat=\"  $lat\";
+		lng=\"  $lng \";
+		</script>";
+		echo "<script type=\"text/javascript\">
+		markers[i]=[lat,lng];
+		i++;
+ </script>";
+		}
 	else{
 		echo  "The time has expired for the city:".$row['description'];
 		$t=(time()-$timestamp);
@@ -31,10 +45,42 @@ if($dbcon){
 			echo "<br>";
 	}
 	}
+	echo "<script type=\"text/javascript\">
+	pos=i-1;
+		</script>";
 	echo "</table>";
 	}
 else{die("error in retrieving data from the database");}
-
-
-
 ?>
+<html>
+<head>
+<script src="http://maps.googleapis.com/maps/api/js"></script>
+<script>
+
+function initialize()
+{alert("hi");
+var myCenter=new google.maps.LatLng(13.0827,80.2707);
+var mapProp = {
+  center:myCenter,
+  zoom:5,
+  mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+		var map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker=new google.maps.Marker({
+  position:myCenter,
+  draggable:true,
+  });
+var i;
+for(i=1;i<=pos;i++){
+	myCenter=new google.maps.LatLng(markers[i][0],markers[i][1]);
+var marker=new google.maps.Marker({
+  position:myCenter,
+  }); marker.setMap(map);
+}}
+		google.maps.event.addDomListener(window, 'load', initialize);
+</script>
+</head>
+<body>
+<div id="googleMap" style="width:500px;height:380px;"></div>
+<body>
+</html>
