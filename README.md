@@ -15,7 +15,7 @@ The Database contains the following fields:
 </p>
 <p id="id1">
 I have attached the <b>DB DETAILS</b> named <strong> registrationspider.sql </strong> with my code files.<br>
-And I have used many script sources which are as follows:<br>
+And I have used many script sources and URL's which are as follows:<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://maps.googleapis.com/maps/api/js;<br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://maps.googleapis.com/maps/api/geocode/json?latlng=lat,lng&sensor=true;
 <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;http://api.openweathermap.org/data/2.5/weather?lat=lat&lng=lng; -To determine the weather at the given latitude and longitude.
