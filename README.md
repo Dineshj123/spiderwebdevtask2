@@ -7,7 +7,7 @@
 I have used the <strong><b>PHP+Apache</b></strong> server for this task.Together I have used the <strong><b>MYSQL</b></strong>database.<br>
 The Database contains the following fields:
 <ul>
-<li style="font-size:100px;color:red;"><b>id</b></li>
+<li style="font-size:100px;color:red">id</li>
 <li><b>Latitude</b></li>
 <li><b>longitude</b></li>
 <li><b>description</b></li>
