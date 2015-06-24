@@ -1,7 +1,7 @@
 <?php
 echo "<script type=\"text/javascript\">
 var markers=[];
-var i=0,lat,lng,pos;
+var i=0,lat,lng,pos,city;
  </script>";
   $lat;
  $lng;
@@ -11,7 +11,7 @@ $password="";
 $db="mydatabase";
 $dbcon=@mysqli_connect($host,$user, $password, $db);
 if($dbcon){
-	$sql="SELECT * FROM `registration`";
+	$sql="SELECT * FROM `registrationspider`";
 	$res=mysqli_query($dbcon,$sql);
 	if($res){
 		echo "";
@@ -28,13 +28,15 @@ if($dbcon){
 		echo $row['longitude'];
 		echo "</td><td>";
 		echo $row['description'];
+		$city=$row['description'];
 		echo "</tr></td><br>";
 		echo "<script type=\"text/javascript\">
 		lat=\"  $lat\";
 		lng=\"  $lng \";
+		city=\"$city\";
 		</script>";
 		echo "<script type=\"text/javascript\">
-		markers[i]=[lat,lng];
+		markers[i]=[lat,lng,city];
 		i++;
  </script>";
 		}
@@ -75,7 +77,13 @@ for(i=1;i<=pos;i++){
 	myCenter=new google.maps.LatLng(markers[i][0],markers[i][1]);
 var marker=new google.maps.Marker({
   position:myCenter,
-  }); marker.setMap(map);
+  }); 
+    var infowindow = new google.maps.InfoWindow({
+  content:"city:"+markers[i][2]
+});
+infowindow.open(map,marker);
+  
+  marker.setMap(map);
 }}
 		google.maps.event.addDomListener(window, 'load', initialize);
 </script>

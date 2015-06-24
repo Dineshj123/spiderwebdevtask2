@@ -1,3 +1,4 @@
+<?php include 'spidertask.php'; ?>
 <html>
 <head>
 <script src="http://maps.googleapis.com/maps/api/js"></script>
@@ -13,9 +14,10 @@
 <div id="googleMap" style="width:500px;height:380px;"></div>
 <div id="current"></div> 
 <form id="form" method="POST" target="_parent" >
-<input type="text" id="box" name="box" />
-<input type="text" id="box1" name="box1" />
-<input type="text" name="cityname" id="cityname" />
+<table><th>Latitude:</th><th>Longitude:</th><th>City:</th>
+<tr><td><input type="text" id="box" name="box" /></td>
+<td><input type="text" id="box1" name="box1" /></td>
+<td><input type="text" name="cityname" id="cityname" /></td></tr></table>
 <input type="submit" id="submitted" value="submit to the database" onsubmit="return false;">
 </form>
 <div id="id">
